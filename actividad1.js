@@ -1,3 +1,5 @@
+//Calcular presupuesto
+
 let costo_hora = 10;
 function calcular_presupuesto(horas_proyecto, costo_hora) 
 {
@@ -10,6 +12,7 @@ function calcular_presupuesto(horas_proyecto, costo_hora)
     }
   }
   
+  //Saludo de bienvenida
   console.log("¡Hola! Mi nombre es Virginia y soy Tester QA. Te doy la bienvenida a mi portfolio");
   
   let contratar_servicio = prompt("¿Querés contratar mis servicios? Ingrese SI o NO").toUpperCase();
