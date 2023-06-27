@@ -40,19 +40,19 @@ const trabajos = [
   { 
     nombre: 'Aisa Alternativas Inteligentes S.A',
     descripción: 'Tester QA | Implementación y soporte',
-    tipo: 'fulltime',
+    tipo: 'Fulltime',
     imagen: './assets/aisa.jpg'
   },
 
   { nombre: 'DonWeb',
   descripción: 'Tester QA | QA Analyst',
-  tipo: 'fulltime',
+  tipo: 'Fulltime',
   imagen: './assets/donweb.jpg'
   },
 
   { nombre: 'Remote Club',
   descripción: 'Tester QA | QA Analyst, Scrum Master',
-  tipo: 'freelance',
+  tipo: 'Freelance',
   imagen: './assets/remoteclub.jpg'
   }
 ]

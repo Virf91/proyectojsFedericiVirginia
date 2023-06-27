@@ -71,7 +71,7 @@ body::-webkit-scrollbar-track {
     padding: 1rem 1.5rem;
     border-color: unset;
     border-width: 0;
-    margin-bottom: auto;
+    margin-bottom: 10px;
 }
 .header__info ul li:hover {
     background-color: var(--secondary-bg-color);
@@ -266,6 +266,11 @@ body::-webkit-scrollbar-track {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+}
+
+.titulo_frelancer{
+    margin-bottom: 20px;
 }
 
 /* ------- SERVICES -------- */
@@ -439,14 +444,15 @@ footer {
   }
   
   p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   
   .card img {
     display: flex;
     width: 70px;
     height: 70px;
-    border: 1px solid #ccc;
+    
+    border-radius: 3px;
    
     
    
