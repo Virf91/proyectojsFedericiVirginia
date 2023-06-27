@@ -8,8 +8,8 @@
 :root {
     --bg-color: #000;
     --font-color: #fff;
-    --secondary-bg-color: #ff4900;
-    --font: "Poppins";
+    --secondary-bg-color: #904d8f;
+    --font: "Roboto";
 }
 body {
     background-color: var(--bg-color);
@@ -56,11 +56,6 @@ body::-webkit-scrollbar-track {
     position: relative;
 }
 
-.logo img {
-    width: 120px;
-    height: auto;
-    margin-top: 1rem;
-}
 
 .header__info ul li {
     padding: 2.5rem 1.2rem 1rem 1.2rem;
@@ -86,6 +81,7 @@ body::-webkit-scrollbar-track {
 @media screen and (max-width: 1200px) {
     .navbar {
         padding: 0 2rem;
+        
     }
     .navbar .checkbox {
         position: absolute;

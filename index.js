@@ -54,3 +54,5 @@ const galleryItems = document.querySelectorAll(".project__card");
     function calculateBudget(hours, precioHora) {
       return hours * precioHora;
     }
+
+    
