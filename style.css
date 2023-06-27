@@ -414,6 +414,9 @@ body::-webkit-scrollbar-track {
     }
 }
 
+/*------ CONVERSOR -----*/
+
+
 /* ------- FOOTER -------- */
 footer {
     border-top: 2px solid #fff;
@@ -445,3 +448,7 @@ footer {
     font-size: 0.9rem;
     color: #a3a3a3;
 }
+
+
+
+
