@@ -34,8 +34,9 @@
       return hours * precioHora;
     }
 
+//PROYECTOS Y FILTROS
 
-    const filterContainer = document.querySelector(".gallery__categories");
+const filterContainer = document.querySelector(".gallery__categories");
     const galleryItems = document.querySelectorAll(".project__card");
     
         filterContainer.addEventListener("click", (event) => {
@@ -59,4 +60,4 @@
             document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
         }
 
-    
+  
