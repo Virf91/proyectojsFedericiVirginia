@@ -36,7 +36,66 @@
 
 //PROYECTOS Y FILTROS
 
-const filterContainer = document.querySelector(".gallery__categories");
+const trabajos = [
+  { 
+    nombre: 'Aisa Alternativas Inteligentes S.A',
+    descripción: 'Tester QA | Implementación y soporte',
+    tipo: 'fulltime'
+  },
+
+  { nombre: 'DonWeb',
+  descripción: 'Tester QA | QA Analyst',
+  tipo: 'fulltime' 
+  },
+
+  { nombre: 'Remote Club',
+  descripción: 'Tester QA | QA Analyst, Scrum Master',
+  tipo: 'freelance' 
+  }
+]
+
+// Función para mostrar los trabajos en la interfaz
+function mostrarTrabajos(trabajos) {
+  const listaTrabajos = document.getElementById('lista-trabajos');
+  listaTrabajos.innerHTML = '';
+
+  trabajos.forEach(trabajo => {
+    const li = document.createElement('li');
+    li.textContent = `Nombre: ${trabajo.nombre}, Descripción: ${trabajo.descripción}, Tipo: ${trabajo.tipo}`;
+    listaTrabajos.appendChild(li);
+  });
+}
+
+// Función para filtrar los trabajos según el tipo seleccionado
+function filtrarTrabajos() {
+  const filtro = document.getElementById('filtro').value;
+  let trabajosFiltrados;
+
+  if (filtro === 'todos') {
+    trabajosFiltrados = trabajos;
+  } else {
+    trabajosFiltrados = trabajos.filter(trabajo => trabajo.tipo === filtro);
+  }
+
+  mostrarTrabajos(trabajosFiltrados);
+}
+
+// Mostrar todos los trabajos al cargar la página
+mostrarTrabajos(trabajos);
+
+// Asociar el evento de cambio al select de filtro
+const selectFiltro = document.getElementById('filtro');
+selectFiltro.addEventListener('change', filtrarTrabajos);
+
+
+
+
+
+
+
+
+
+/*const filterContainer = document.querySelector(".gallery__categories");
     const galleryItems = document.querySelectorAll(".project__card");
     
         filterContainer.addEventListener("click", (event) => {
@@ -58,7 +117,7 @@ const filterContainer = document.querySelector(".gallery__categories");
     
         function scrollToSection(sectionId){
             document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
-        }
+        }*/
 
   // Consumiendo API DE CONVERSIÓN DE DIVISAS
 
@@ -70,7 +129,7 @@ const cambioEl = document.getElementById('cambio');
 const tazaEl = document.getElementById('taza');
 
 
-// Fetch Exchange Rate and Update the DOM
+// Fetch Exchange Rate y actualización de DOM
 function calculate(){
     const moneda_one = monedaEl_one.value;
     const moneda_two = monedaEl_two.value;

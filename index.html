@@ -114,7 +114,7 @@
           
     </section>
     <section class="conversor">
-        <img src="img/icono.png" alt="" class="conversor-imagen">
+        <img src="./assets/cambio-de-divisas.png" alt="" class="conversor-imagen">
         <h1>¿Necesitas convertir el presupuesto a tu moneda local?</h1>
         <p>Escoje la moneda y la cantidad para realizar la conversion</p>
         
@@ -310,6 +310,13 @@
         </section>
 
         <!--PORTFOLIO -->
+        <div>
+         
+    </div>
+
+
+
+
         <!--PORTFOLIO -->
 <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
     <div class="portfolio__title flex flex-column gap-3 text-center">
@@ -318,45 +325,18 @@
             Acá podrán visualizar los proyectos en los que he participado y donde pude poner en práctica mis conocimientos.
         </p>
     </div>
-    <div id="filter-container" class="portfolio__gallery">
-        <div class="gallery__categories mb-5 mt-5">
-            <ul class="flex list-none flex-wrap justify-content-center gap-3">
-                <li class="filter-item active" data-filter="all">Todos</li>
-                <li class="filter-item" data-filter="gym">Aisa Alternativas Inteligentes</li>
-                <li class="filter-item" data-filter="tours__Web">DonWeb</li>
-                <li class="filter-item" data-filter="world__Tours">Remote Club - Proyecto freelance</li>
-            </ul>
-        </div>
-        <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
-            <div class="project__card tours__Web">
-                <img src="./assets/aisa.jpg" alt="">
-                <div class="overlay"></div>
-                <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                    <h2>Aisa</h2>
-                    <p>Tester QA | Implementación y soporte</p>
-                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                </div>
-            </div>
-            <div class="project__card e__commerce">
-                <img src="./assets/donweb.png" alt="">
-                <div class="overlay"></div>
-                <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                    <h2>DonWeb</h2>
-                    <p>Tester QA | QA Analyst</p>
-                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                </div>
-            </div>
-            <div class="project__card tours__Web">
-                <img src="./assets/remoteclub.jpg" alt="">
-                <div class="overlay"></div>
-                <div class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
-                    <h2>Remote Club</h2>
-                    <p>Tester QA | QA Analyst | Scrum Master</p>
-                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
-                </div>
-            </div>
-        </div>
-    </div>
+   
+
+    <label for="filtro">Filtrar por tipo:</label>
+    <select id="filtro">
+      <option value="todos">Todos</option>
+      <option value="fulltime">Full-time</option>
+      <option value="freelance">Freelance</option>
+    </select>
+  
+    <ul id="lista-trabajos" class="lista"></ul>
+   
+       
 </section>
 
         <!--FOOTER -->
