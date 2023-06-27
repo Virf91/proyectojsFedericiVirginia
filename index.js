@@ -40,17 +40,20 @@ const trabajos = [
   { 
     nombre: 'Aisa Alternativas Inteligentes S.A',
     descripción: 'Tester QA | Implementación y soporte',
-    tipo: 'fulltime'
+    tipo: 'fulltime',
+    imagen: './assets/aisa.jpg'
   },
 
   { nombre: 'DonWeb',
   descripción: 'Tester QA | QA Analyst',
-  tipo: 'fulltime' 
+  tipo: 'fulltime',
+  imagen: './assets/donweb.jpg'
   },
 
   { nombre: 'Remote Club',
   descripción: 'Tester QA | QA Analyst, Scrum Master',
-  tipo: 'freelance' 
+  tipo: 'freelance',
+  imagen: './assets/remoteclub.jpg'
   }
 ]
 
@@ -59,68 +62,47 @@ function mostrarTrabajos(trabajos) {
   const listaTrabajos = document.getElementById('lista-trabajos');
   listaTrabajos.innerHTML = '';
 
+  const filtro = document.getElementById('filtro').value;
+
   trabajos.forEach(trabajo => {
-    const li = document.createElement('li');
-    li.textContent = `Nombre: ${trabajo.nombre}, Descripción: ${trabajo.descripción}, Tipo: ${trabajo.tipo}`;
-    listaTrabajos.appendChild(li);
+    if (filtro === 'todos' || trabajo.tipo === filtro) {
+      const div = document.createElement('div');
+      div.className = 'card';
+
+      const imagen = document.createElement('img');
+      imagen.src = trabajo.imagen;
+      imagen.alt = 'Imagen del trabajo';
+      div.appendChild(imagen);
+
+      const contenido = document.createElement('div');
+      contenido.className = 'card-content';
+
+      const nombre = document.createElement('h2');
+      nombre.textContent = trabajo.nombre;
+      contenido.appendChild(nombre);
+
+      const descripcion = document.createElement('p');
+      descripcion.textContent = trabajo.descripción;
+      contenido.appendChild(descripcion);
+
+      const tipo = document.createElement('p');
+      tipo.textContent = `Tipo: ${trabajo.tipo}`;
+      contenido.appendChild(tipo);
+
+      div.appendChild(contenido);
+
+      listaTrabajos.appendChild(div);
+    }
   });
 }
 
-// Función para filtrar los trabajos según el tipo seleccionado
-function filtrarTrabajos() {
-  const filtro = document.getElementById('filtro').value;
-  let trabajosFiltrados;
-
-  if (filtro === 'todos') {
-    trabajosFiltrados = trabajos;
-  } else {
-    trabajosFiltrados = trabajos.filter(trabajo => trabajo.tipo === filtro);
-  }
-
-  mostrarTrabajos(trabajosFiltrados);
-}
-
-// Mostrar todos los trabajos al cargar la página
-mostrarTrabajos(trabajos);
-
-// Asociar el evento de cambio al select de filtro
-const selectFiltro = document.getElementById('filtro');
-selectFiltro.addEventListener('change', filtrarTrabajos);
+document.getElementById('filtro').addEventListener('change', function() {
+  mostrarTrabajos(trabajos);
+});
 
 
 
-
-
-
-
-
-
-/*const filterContainer = document.querySelector(".gallery__categories");
-    const galleryItems = document.querySelectorAll(".project__card");
-    
-        filterContainer.addEventListener("click", (event) => {
-            if (event.target.classList.contains("filter-item")) {
-                filterContainer.querySelector(".active").classList.remove("active");
-                event.target.classList.add("active")
-                const filterValue = event.target.getAttribute("data-filter")
-                galleryItems.forEach(item => {
-                    if (item.classList.contains(filterValue) || filterValue === "all") {
-                        item.classList.remove("hide")
-                        item.classList.add("show")
-                    } else {
-                        item.classList.remove("show")
-                        item.classList.add("hide")
-                    }
-                })
-            }
-        })
-    
-        function scrollToSection(sectionId){
-            document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
-        }*/
-
-  // Consumiendo API DE CONVERSIÓN DE DIVISAS
-
+// CONSUMIENDO API DE DIVISAS
 const monedaEl_one = document.getElementById('moneda-uno');
 const monedaEl_two = document.getElementById('moneda-dos');
 const cantidadEl_one = document.getElementById('cantidad-uno');

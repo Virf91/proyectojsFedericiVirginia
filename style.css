@@ -417,5 +417,38 @@ footer {
 }
 
 
+/* ------- CARDS -------- */
 
-
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+    justify-content: center;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+  }
+  
+  .card img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+   
+    
+   
+  }
+  
