@@ -213,7 +213,7 @@ body::-webkit-scrollbar-track {
 .message__bubble {
     display: inline-block;
     position: relative;
-    width: 180px;
+    width: 200px;
     height: auto;
     background-color: var(--secondary-bg-color);
 }
