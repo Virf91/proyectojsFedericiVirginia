@@ -22,6 +22,7 @@ body {
 
 .container {
     padding: 0rem 12rem;
+    
 }
 
 @media screen and (max-width: 992px) {
@@ -302,6 +303,8 @@ body::-webkit-scrollbar-track {
     transition: all 0.2s ease-in;
 }
 
+  
+  
 
 
 .card:hover {
@@ -325,6 +328,7 @@ list-style: none;
     color: #fff;
     padding: 0.3rem 1rem;
     border-radius: 0.3rem;
+    margin-bottom: 15px;
 }
 
 /*------ CONVERSOR -----*/
@@ -442,7 +446,11 @@ footer {
 .logo_whatsapp{
     margin-bottom: 20px;
 }
-
+.derechos{
+    font-size: small;
+    color: #a3a3a3;
+    margin-top: 15rem;
+}
 
 /* ------- CARDS -------- */
 
