@@ -78,7 +78,21 @@ body::-webkit-scrollbar-track {
 .header__info ul li:hover {
     background-color: var(--secondary-bg-color);
 }
-
+.saludo {
+    animation-name: animacion;
+    animation-duration: 1s;
+    animation-delay: 2s;
+      
+      
+}
+.tester{
+    
+     animation-name: animacion;
+     animation-duration: 1s;
+     animation-delay: 3s;
+       
+      
+}
 
 /**Responsive design navbar**/
 
