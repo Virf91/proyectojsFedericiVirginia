@@ -271,7 +271,19 @@ body::-webkit-scrollbar-track {
 }
 
 .titulo_frelancer{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.text-center{
+    margin-bottom: 30px;
+}
+
+.btn_calcular{
+    background-color: var(--secondary-bg-color);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;  
 }
 
 /* ------- SERVICES -------- */
@@ -307,7 +319,13 @@ body::-webkit-scrollbar-track {
 .lista {
 list-style: none;
 }
-
+.btn_filtro{
+    background-color: var(--secondary-bg-color);
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+}
 
 /*------ CONVERSOR -----*/
 .conversor {
@@ -414,12 +432,15 @@ footer {
     color: var(--secondary-bg-color);
 }
 .contact a {
-    padding: 0.5rem 1.8rem;
+    padding: 0.3rem 1.8rem;
     background-color: unset;
-    border: 1px solid var(--secondary-bg-color);
     font-family: var(--font);
     font-size: 0.9rem;
     color: #a3a3a3;
+}
+
+.logo_whatsapp{
+    margin-bottom: 20px;
 }
 
 

@@ -48,7 +48,7 @@
             class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
             <div class="left__content col-12 xl:col-6">
                 <div class="message__bubble triangle mb-4 md:mb-2">
-                    <div class="message__text p-2 sm:p-3 text-center">
+                    <div class="message__text p-2 sm:p-3">
                         <p class="animate__animated animate__bounce">Hola, Yo soy</p>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
               <form id="budget-form">
                 <label for="hours">Horas de trabajo:</label>
                 <input type="number" id="hours" required>
-                <button type="submit">Calcular</button>
+                <button type="submit" class="btn_calcular">Calcular</button>
               </form>
             </section>
           </div>
@@ -314,7 +314,7 @@
    
 
     <label for="filtro">Filtrar por tipo:</label>
-    <select id="filtro">
+    <select id="filtro" class="btn_filtro">
       
       <option value="Fulltime">Full-time</option>
       <option value="Freelance">Freelance</option>
@@ -335,22 +335,19 @@
                     
                 </div>
             </div>
-            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column md:align-items-center">
                 <h3>Contacto</h3>
-                <div class="phone__number flex align-items-center gap-2">
-                    <i class="fa-solid fa-phone"></i>
-                    <p>+5493471689344</p>
+                <div class="phone__number flex align-items-center gap-5 logo_whatsapp">
+                    <a href="https://wa.me/+5493471689344">
+                        <img src="./assets/whatsapp.png" alt="whatsapp image">
+                    </a>
                 </div>
-                <div class="email flex align-items-center gap-2">
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>virfederici@gmail.com</p>
+                <div class="email flex align-items-center gap-5">
+                    <a href="mailTo:virfederici@gmail.com">
+                        <img src="./assets/gmail.png" alt="whatsapp image">
+                    </a>
                 </div>
-                <a href="mailTo:virfederici@gmail.com"
-                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
-                    <span>
-                        <i class="fa-solid fa-message"></i>
-                    </span>Escríbeme
-                </a>
+                
             </div>
             <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
                 <h3>Mis servicios</h3>
